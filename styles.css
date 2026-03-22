@@ -19,14 +19,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
+  overflow-x: hidden;
+  max-width: 100vw;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  max-width: 100vw;
   color: var(--text);
   background: var(--bg);
   font-family: var(--body);
+  overflow-x: hidden;
 }
 
 a {
@@ -247,8 +251,8 @@ img {
 .hero {
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr);
-  border-bottom: 1px solid var(--line);
-  height: calc(100vh - var(--header-height) - 40px);
+  min-height: calc(100vh - var(--header-height) - 40px);
+  min-height: calc(100dvh - var(--header-height) - 40px);
 }
 
 .hero__image {
@@ -348,7 +352,8 @@ img {
 
 .works {
   display: flex;
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
   flex-direction: column;
 }
 
@@ -624,7 +629,8 @@ img {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  height: calc(100vh - var(--header-height));
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
 }
 
 .ethos__statement {
@@ -688,7 +694,8 @@ img {
 
 .cta {
   display: flex;
-  height: calc(100vh - var(--header-height) - 62px);
+  min-height: calc(100vh - var(--header-height) - 62px);
+  min-height: calc(100dvh - var(--header-height) - 62px);
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -784,10 +791,12 @@ img {
 
   .hero {
     grid-template-columns: 1fr;
-    grid-template-rows: 55fr 45fr;
+    grid-template-rows: 1fr auto;
   }
 
   .hero__image {
+    min-height: 40vh;
+    min-height: 40dvh;
     height: 100%;
     border-right: 0;
     border-bottom: 1px solid var(--line);
@@ -816,7 +825,7 @@ img {
 
   .ethos {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: auto 1fr;
   }
 
   .ethos__statement {
@@ -868,7 +877,8 @@ img {
   }
 
   .hero {
-    height: calc(100vh - var(--header-height) - 78px);
+    min-height: calc(100vh - var(--header-height) - 78px);
+    min-height: calc(100dvh - var(--header-height) - 78px);
   }
 
   .hero__content,
@@ -878,6 +888,17 @@ img {
 
   .hero__content h2 {
     font-size: 2.25rem;
+    word-break: break-word;
+  }
+
+  .ethos__statement h2 {
+    font-size: 2rem;
+    word-break: break-word;
+  }
+
+  .cta__headline span:first-child {
+    font-size: 2rem;
+    word-break: break-word;
   }
 
   .button--dark {

@@ -82,7 +82,7 @@ img {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   border-bottom: 2px solid transparent;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: color 0.3s cubic-bezier(0.19, 1, 0.22, 1), border-bottom-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .primary-nav a:hover,
@@ -269,7 +269,7 @@ img {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), color 0.3s cubic-bezier(0.19, 1, 0.22, 1), border-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .button--dark {
@@ -707,7 +707,7 @@ img {
   border: 1px solid var(--line);
   padding: 33px;
   text-align: left;
-  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1), color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .cta-tile:hover {

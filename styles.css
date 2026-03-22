@@ -43,6 +43,12 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.hero__image:hover img,
+.work-card__media:hover img {
+  transform: scale(1.04);
 }
 
 .topbar {
@@ -75,8 +81,11 @@ img {
   font: 500 0.875rem/1.4 var(--sans);
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
+.primary-nav a:hover,
 .primary-nav a.is-active {
   color: var(--text);
   border-bottom: 2px solid var(--line);
@@ -317,6 +326,7 @@ img {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .button--dark {
@@ -328,13 +338,24 @@ img {
   font-size: 0.75rem;
 }
 
+.button--dark:hover {
+  background: #fff;
+  color: #000;
+}
+
 .button--outline {
   border: 1px solid #fff;
+  background: transparent;
   color: #fff;
   font-family: var(--body);
   font-size: 0.625rem;
   font-weight: 400;
   letter-spacing: 0.2em;
+}
+
+.button--outline:hover {
+  background: #fff;
+  color: #000;
 }
 
 .section-header--soft {
@@ -743,6 +764,12 @@ img {
   border: 1px solid var(--line);
   padding: 33px;
   text-align: left;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cta-tile:hover {
+  background: #000;
+  color: #fff;
 }
 
 .cta-tile strong {

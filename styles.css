@@ -176,65 +176,8 @@ img {
   flex: 0 0 auto;
 }
 
-.nav-icon--grid::before,
-.nav-icon--grid::after,
-.nav-icon--archive::before,
-.nav-icon--process::before,
-.nav-icon--contact::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border: 1.5px solid currentColor;
-}
-
-.nav-icon--grid::after {
-  inset: 4px;
-}
-
-.nav-icon--archive {
-  width: 20px;
-  height: 20px;
-}
-
-.nav-icon--archive::after {
-  content: "";
-  position: absolute;
-  inset: 5px;
-  border-top: 1.5px solid currentColor;
-  border-bottom: 1.5px solid currentColor;
-}
-
-.nav-icon--process {
-  width: 11px;
-  height: 18px;
-}
-
-.nav-icon--process::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 2px;
-  bottom: 2px;
-  width: 1.5px;
-  background: currentColor;
-  transform: translateX(-50%);
-}
-
-.nav-icon--contact {
-  width: 20px;
-  height: 16px;
-}
-
-.nav-icon--contact::after {
-  content: "";
-  position: absolute;
-  left: 1px;
-  right: 1px;
-  top: 1px;
-  height: 1.5px;
-  background: currentColor;
-  transform: skewY(-25deg);
-  transform-origin: left top;
+.sidebar__nav a.is-current .nav-icon {
+  filter: invert(1);
 }
 
 .page-shell {

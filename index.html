@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ceramics Archive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Libre+Baskerville:wght@400&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">CERAMICS/ARCHIVE</div>
+      <nav class="primary-nav" aria-label="Primary">
+        <a class="is-active" href="#works">Collections</a>
+        <a href="#cta">Exhibitions</a>
+        <a href="#ethos">Studio</a>
+        <a href="#footer">Info</a>
+      </nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <aside class="sidebar" id="sidebar-nav">
+      <div class="sidebar__intro">
+        <h1>001/PORTFOLIO</h1>
+        <p>YEAR_2024</p>
+      </div>
+      <nav class="sidebar__nav" aria-label="Archive Sections">
+        <a class="is-current" href="#index">
+          <span class="nav-icon nav-icon--grid" aria-hidden="true"></span>
+          <span>Index</span>
+        </a>
+        <a href="#works">
+          <span class="nav-icon nav-icon--archive" aria-hidden="true"></span>
+          <span>Archive</span>
+        </a>
+        <a href="#ethos">
+          <span class="nav-icon nav-icon--process" aria-hidden="true"></span>
+          <span>Process</span>
+        </a>
+        <a href="#footer">
+          <span class="nav-icon nav-icon--contact" aria-hidden="true"></span>
+          <span>Contact</span>
+        </a>
+      </nav>
+    </aside>
+
+    <main class="page-shell">
+      <div class="metadata-bar" id="index">
+        <span>Entry: 001_HOME</span>
+        <span>Location: STUDIO_04_KYOTO_BERLIN</span>
+        <span>Date: 24.10.2024</span>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="hero__image">
+          <img src="./src/1.jpg" alt="Sculptural ceramic vessel" class="ceramic-scene--hero" />
+          <span class="hero__tag">CATALOGUE NO. 882-V</span>
+        </div>
+        <div class="hero__content">
+          <p class="eyebrow">01 // VISUAL STATEMENT</p>
+          <h2>FORM /<br />TEXTURE /<br />SILENCE</h2>
+          <p class="hero__summary">
+            An exploration of geological time through the medium of refined stoneware. Each vessel is a singular point
+            in a continuing spatial dialogue.
+          </p>
+          <a class="button button--dark" href="#works">View Monograph</a>
+        </div>
+      </section>
+
+      <section class="works" id="works">
+        <div class="section-header section-header--soft">
+          <h2>The Quiet Anthology</h2>
+          <p>SELECTED_WORKS_04-08</p>
+        </div>
+        <div class="works-grid">
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="./src/2.jpg" alt="Eroded Vessel I" class="ceramic-scene--tile" />
+            </div>
+            <div class="work-card__body">
+              <p>2023 // SERIES A</p>
+              <h3>Eroded Vessel I</h3>
+              <a href="#cta">Explore -&gt;</a>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="./src/3.jpg" alt="Monolith Slab" class="ceramic-scene--tile" />
+            </div>
+            <div class="work-card__body">
+              <p>2024 // SERIES B</p>
+              <h3>Monolith Slab</h3>
+              <a href="#cta">Explore -&gt;</a>
+            </div>
+          </article>
+          <article class="work-card">
+            <div class="work-card__media">
+              <img src="./src/4.jpg" alt="Sedimentary Forms" class="ceramic-scene--tile" />
+            </div>
+            <div class="work-card__body">
+              <p>2022 // SERIES A</p>
+              <h3>Sedimentary Forms</h3>
+              <a href="#cta">Explore -&gt;</a>
+            </div>
+          </article>
+          <article class="archive-card">
+            <div class="archive-card__hero">
+              <div class="archive-glyph" aria-hidden="true"></div>
+              <h3>Archive<br />Overview</h3>
+            </div>
+            <div class="archive-card__body">
+              <p>TOTAL COLLECTION: 412 PIECES<br />ACTIVE EXHIBITIONS: 03</p>
+              <a class="button button--outline" href="#cta">Full Catalog</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ethos" id="ethos">
+        <div class="ethos__statement">
+          <p class="eyebrow eyebrow--muted">02 // THE PHILOSOPHY</p>
+          <h2>WABI-SABI<br />AS<br />ARCHITECTURAL<br />RESTRAINT.</h2>
+          <div class="divider"></div>
+          <p class="ethos__copy">
+            "Nothing lasts, nothing is finished, and nothing is perfect." We apply this ethos through the rigorous lens
+            of modernism. By stripping away the decorative, we allow the material, the clay, the heat, the time, to
+            speak with total clarity. Our work is not about perfection, but about the precise tension between the
+            organic and the engineered.
+          </p>
+        </div>
+        <div class="ethos__process">
+          <div class="process-list">
+            <div class="process-item">
+              <span>PROCESS_A: MATERIAL SELECTION</span>
+              <strong>0.1</strong>
+            </div>
+            <div class="process-item">
+              <span>PROCESS_B: CHANNEL FORMING</span>
+              <strong>0.2</strong>
+            </div>
+            <div class="process-item">
+              <span>PROCESS_C: CURATION</span>
+              <strong>0.3</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="cta">
+        <p class="cta__eyebrow">DEEP NAVIGATION</p>
+        <a class="cta__headline" href="#index">
+          <span>EXPLORE THE ARCHIVE</span>
+          <span class="cta__arrow" aria-hidden="true">↓</span>
+        </a>
+        <div class="cta__links">
+          <a class="cta-tile" href="#ethos">
+            <span>01/JOURNAL</span>
+            <strong>The Studio Process</strong>
+          </a>
+          <a class="cta-tile" href="#works">
+            <span>02/COLLECTIONS</span>
+            <strong>Private Commissions</strong>
+          </a>
+          <a class="cta-tile" href="#footer">
+            <span>03/EXHIBITIONS</span>
+            <strong>Global Calendar</strong>
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer" id="footer">
+        <p>©2024 ARCHITECTURAL CERAMICS. ALL RIGHTS RESERVED.</p>
+        <div class="footer__links">
+          <a href="/">Instagram</a>
+          <a href="/">Terms</a>
+          <a href="/">Privacy</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
